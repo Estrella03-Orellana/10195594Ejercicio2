@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_10195594Ejercicio2.Formula"
+             Title="Formula">
+    <!--<Summary>
+     <Createddate> 25 may. 2024</Createddate>
+     <company> Bazar Rosario </company>
+     <lastmodificationdate> 29 may. 2024</lastmodificationdate>
+     <lastmodificationdescription>
+            Ultima modificación. Agregue la documentacion XML al programa y la validación de los campos
+     </lastmodificationdescription>
+     <lastmodifierautor> Estrella Orellana</lastmodifierautor>
+ </Summary>-->
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <Image Source="operacionMat.jpg" WidthRequest="300" HorizontalOptions="Center"/>
+            <Label Text="Ejercicio 2 : dados los números A y B, escriba el resultado de la siguiente expresión (A+B)^2/2"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" />
+            <Entry Placeholder="Ingrese el valor de A " x:Name="DatoA"/>
+            <Entry Placeholder="Ingrese el valor de B " x:Name="DatoB"/>
+            <Entry Placeholder="Solución" x:Name="Resultado"/>
+            <Button Text="Cálcular Operación" Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
